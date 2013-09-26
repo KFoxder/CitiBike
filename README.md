@@ -7,7 +7,7 @@ This is a project designated to analyzing the existing CitiBike data in New York
 
 I have included my AWK commands in files and the current CitiBike Data via (http://citibikenyc.com/system-data). 
 
-As of (09/26/2013) here are my findings broken by day: 
+As of (09/26/2013) here are my findings broken down by day: 
 
 Monday -- 509879 Trips -- 29992.9 Trips per Day -- 69348.4 Miles per Day-- 481.824 Annual Signups --2870.53 Day Passes --187 Week Passes
 Tuesday -- 445093 Trips -- 26181.9 Trips per Day -- 50588.4 Miles per Day-- 588.647 Annual Signups --1321.59 Day Passes --190.824 Week Passes
