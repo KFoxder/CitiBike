@@ -35,13 +35,13 @@ day++;
 
 
 END{
-printf("Day of Week -- Total Trips -- Avg Trips -- Avg Miles -- Avg. Sign Up -- Avg. 24hr Pass -- Avg. 7day Pass\n");
+printf("Day of Week,Total Trips,Avg Trips,Avg Miles,Avg. Sign Up,Avg. 24hr Pass,Avg. 7day Pass\n");
 for(i=0;i<7;i++){
 avgTrips=numTrips[i]/numOfDay[i];
 avgMiles=numMiles[i]/numOfDay[i];
 avgSignUp=numSignUp[i]/numOfDay[i];
 avgDayPass=numDayPass[i]/numOfDay[i];
 avgWeekPass=numWeekPass[i]/numOfDay[i];
-printf(nameOfWeek[i]" -- "numTrips[i]" Trips -- "avgTrips" Trips per Day -- "avgMiles" Miles per Day-- "avgSignUp" Annual Signups --"avgDayPass" Day Passes --"avgWeekPass" Week Passes\n");
+printf(nameOfWeek[i]","numTrips[i]","avgTrips","avgMiles","avgSignUp","avgDayPass","avgWeekPass"\n");
 }
 };'  data-CSXes.csv
