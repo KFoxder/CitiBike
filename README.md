@@ -18,3 +18,5 @@ Saturday -- 503489 Trips -- 31468.1 Trips per Day -- 58056.6 Miles per Day-- 423
 Sunday -- 513825 Trips -- 32114.1 Trips per Day -- 69745.6 Miles per Day-- 373.812 Annual Signups --2863.81 Day Passes --199.312 Week Passes
 
 ![alt tag](https://raw.github.com/KFoxder/CitiBike/master/PassesChart.png)
+
+![alt tag](https://raw.github.com/KFoxder/CitiBike/master/MilesTripChart.png)
