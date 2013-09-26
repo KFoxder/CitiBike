@@ -1,0 +1,47 @@
+awk '
+BEGIN {
+FS=",";
+day=0;
+nameOfWeek[0]="Monday		";
+nameOfWeek[1]="Tuesday	";
+nameOfWeek[2]="Wednesday	";
+nameOfWeek[3]="Thursday	";
+nameOfWeek[4]="Friday		";
+nameOfWeek[5]="Saturday	";
+nameOfWeek[6]="Sunday		";
+}; 
+
+
+{if(NR>7){  # skip beginning days with limited data
+if(day=="7"){
+day=0;
+numOfDay[day]++;
+numTrips[day]+=$2;
+numMiles[day]+=$4;
+numSignUp[day]+=$7;
+numDayPass[day]+=$8;
+numWeekPass[day]+=$9;
+day++;
+}else{
+numOfDay[day]++;
+numTrips[day]+=$2;
+numMiles[day]+=$4;
+numSignUp[day]+=$7;
+numDayPass[day]+=$8;
+numWeekPass[day]+=$9;
+day++;
+}
+}};
+
+
+END{
+printf("Day of Week -- Total Trips -- Avg Trips -- Avg Miles -- Avg. Sign Up -- Avg. 24hr Pass -- Avg. 7day Pass\n");
+for(i=0;i<7;i++){
+avgTrips=numTrips[i]/numOfDay[i];
+avgMiles=numMiles[i]/numOfDay[i];
+avgSignUp=numSignUp[i]/numOfDay[i];
+avgDayPass=numDayPass[i]/numOfDay[i];
+avgWeekPass=numWeekPass[i]/numOfDay[i];
+printf(nameOfWeek[i]" -- "numTrips[i]" Trips -- "avgTrips" Trips per Day -- "avgMiles" Miles per Day-- "avgSignUp" Annual Signups --"avgDayPass" Day Passes --"avgWeekPass" Week Passes\n");
+}
+};'  data-CSXes.csv
