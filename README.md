@@ -56,6 +56,12 @@ The link to the data in .csv format is located on the [Citi Bike System Data](ht
     	avgWeekPass = float(numWeekPass[i]/numOfDays[i])
     	print nameOfWeek[i],",",numTrips[i],",",avgTrips,",",avgMiles,",",avgSignUp,",",avgDayPass,",",avgWeekPass
 
+####Usage####
+
+In the terminal:
+
+    python CitiBikeParse.py data-CSXes.csv
+
 ###Code - awk Command###
 
     awk '
