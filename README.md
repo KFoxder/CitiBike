@@ -11,7 +11,7 @@ I have included my AWK commands in files and the current CitiBike Data via (http
 
 ###How to get Data###
 
-The link to the data in .csv format is located on the [Citi Bike System Data website](http://citibikenyc.com/system-data) and the link on the bottom right that says "Get Data" is the link for the data in .csv format. 
+The link to the data in .csv format is located on the [Citi Bike System Data](http://citibikenyc.com/system-data) website and the link on the bottom right that says "Get Data" is the link for the data in .csv format. 
 
     
 
